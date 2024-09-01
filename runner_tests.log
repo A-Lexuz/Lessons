@@ -1,0 +1,16 @@
+2024-09-01 18:52:56,560 | WARNING | Неверный тип данных для бегуна
+Traceback (most recent call last):
+  File "C:\Users\Алексей\PycharmProjects\lesson0\Практические задания\Модуль 12\tests_12_4.py", line 75, in test_run
+    runner_1 = Runner(666, 5)
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Алексей\PycharmProjects\lesson0\Практические задания\Модуль 12\tests_12_4.py", line 10, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+2024-09-01 18:52:56,560 | WARNING | Неверная скорость для объекта
+Traceback (most recent call last):
+  File "C:\Users\Алексей\PycharmProjects\lesson0\Практические задания\Модуль 12\tests_12_4.py", line 63, in test_walk
+    runner_1 = Runner("Runner", -5)
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Алексей\PycharmProjects\lesson0\Практические задания\Модуль 12\tests_12_4.py", line 15, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
