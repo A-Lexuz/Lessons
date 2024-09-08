@@ -2,17 +2,17 @@ import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
 
-bot = Bot(token='botToken')
+bot = Bot(token='token')
 dp = Dispatcher()
 
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message):
-    print("Привет! Я бот помогающий твоему здоровью.")
+    print(f'{message.chat.first_name} {message.chat.last_name} запустил бота')
     await message.answer("Привет! Я бот помогающий твоему здоровью.")
 
 @dp.message()
 async def bot_react1(message):
-    print('Введите команду /start, чтобы начать общение')
+    print(f'{message.chat.first_name} {message.chat.last_name} отправил неверную команду ({message.text})')
     await message.answer('Введите команду /start, чтобы начать общение')
 
 
