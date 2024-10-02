@@ -8,7 +8,7 @@ from aiogram.types import (KeyboardButton, Message, ReplyKeyboardMarkup, ReplyKe
 from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
 
 router = Router()
-bot = Bot(token='7148520650:AAHJr1cxNLwVmPT0VoMMoRJ1ZWszku9XC9k')
+bot = Bot(token='token')
 dp = Dispatcher()
 
 tablets = ('https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_66042077276cdf0c037197e7_660420eb74b4ea5e8752bfd7/scale_1200',
